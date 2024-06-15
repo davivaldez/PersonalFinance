@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-    <img src="./public/resources/images/home-screen.PNG" alt="Home Screen">
+    <img src="./public/resources/images/home.PNG" alt="Home Screen">
 </p>
 
 ## Descrição
