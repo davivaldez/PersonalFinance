@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header transaction-area"
+    "main transaction-area"
+    "footer footer";
+  min-height: 100vh;
+  background-color: #1c1a1d !important;
+}
+
+header {
+  background-color: #39353b;
+  border-radius: 12px;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  margin: 15px 0 15px 15px;
+  grid-area: header;
+  color: white;
+}
+
+main {
+  grid-area: main;
+}
+
+main #form h2 {
+  background-color: #39353b;
+  border-radius: 12px;
+  width: fit-content;
+  padding: 15px;
+  margin: 15px 0 20px 15px;
+  color: white;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 15px;
+  margin: 15px 0 20px 15px;
+}
+
+.transaction-form label {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.transaction-form input {
+  height: 60px;
+  font-size: 1.85rem;
+  border-radius: 12px;
+  background-color: #39353b;
+  color: white;
+}
+
+#form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+#btn-save {
+  padding: 10px 8px;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: #49db24;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn-save:hover {
+  background-color: #10d120;
+}
+
+#btn-cancel {
+  padding: 10px 8px;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: #f09935;
+  transition: 0.3s;
+  cursor: pointer;
+  display: none;
+}
+
+#btn-cancel:hover {
+  background-color: #e48508;
+}
+
+#transaction-area {
+  padding: 15px;
+  grid-area: transaction-area;
+}
+
+#transaction-area h2 {
+  background-color: #39353b;
+  color: white;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+#balance-total {
+  background-color: #39353b;
+  color: white;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+
+#transaction-section {
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.btn-edit {
+  width: 70px;
+  margin-right: 5px;
+}
+
+.btn-delete {
+  width: 70px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+footer p {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+  color: white;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 950px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "transaction-area"
+      "footer";
+  }
+}
+
+@media (max-width: 539px) {
+  .btn-delete {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.45rem;
+  }
+
+  main #form h2 {
+    font-size: 1.45rem;
+  }
+
+  .transaction-form label {
+    font-size: 1.25rem;
+  }
+
+  .transaction-form input {
+    font-size: 1.25rem;
+  }
+
+  #transaction-section {
+    margin: auto;
+    max-width: 250px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
