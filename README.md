@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">Validador de e-mail e senha 💻</h1>
+<h1 align="center" style="font-weight: bold;">Personal Finance 💻</h1>
 
 [![MIT license](https://img.shields.io/badge/License-MIT-green.svg)](https://lbesson.mit-license.org/)
 ![Maintainer](https://img.shields.io/badge/maintainer-yes-green)
