@@ -48,6 +48,10 @@ Esse projeto tem como objetivo criar, atualizar, editar e deletar transações. 
 
     git clone https://github.com/davivaldez/PersonalFinance.git
 
+### Alterando diretório:
+
+    cd PersonalFinance/
+
 ### Instalando dependências do package.json:
 
       npm install
