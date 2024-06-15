@@ -54,7 +54,7 @@ Esse projeto tem como objetivo criar, atualizar, editar e deletar transações. 
 
 ### Instalando dependências do package.json:
 
-      npm install
+    npm install
 
 ### Inicializando a aplicação:
 
